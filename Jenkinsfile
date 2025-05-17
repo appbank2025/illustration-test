@@ -3,19 +3,18 @@ pipeline{
 	stages{
 		stage('1-clone the repo'){
 			steps{
-				sh 'action1'
+				sh 'lsblk'
 			}
 		}
 		stage('2-move the repo'){
 			steps{
-				sh 'action2'
-				sh 'action2b'
+				sh 'lscpu'
+				sh 'hostname'
 			}
 		}
 		stage('3-build the repo'){
 			steps{
 				sh 'pwd'
-				sh 'action3'
 			}
 		}
 	}
