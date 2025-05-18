@@ -18,7 +18,7 @@ pipeline{
 			}
 		}
 		stage('4-syscehck'){
-			step{
+			steps{
 				sh 'free -h'
 				sh 'free -g'
 				sh 'cat /etc/os-release'
