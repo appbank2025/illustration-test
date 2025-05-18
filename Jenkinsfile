@@ -17,5 +17,12 @@ pipeline{
 				sh 'pwd'
 			}
 		}
+		stage('4-syscehck'){
+			step{
+				sh 'free -h'
+				sh 'free -g'
+				sh 'cat /etc/os-release'
+			}
+		}
 	}
 }
